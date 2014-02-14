@@ -1,0 +1,52 @@
+type = "x86"
+arch = "Windows"
+author = "Alexey Melnichuk"
+depends = {
+[[lua >= 5.1]],
+}
+
+desc = "File system path manipulation library"
+version = "0.2.1"
+maintainer = "Alexey Melnichuk"
+files = {
+Runtime = {
+[[lib\lua\path.lua]],
+[[lib\lua\path\fs.lua]],
+[[lib\lua\path\findfile.lua]],
+[[lib\lua\path\lfs\fs.lua]],
+[[lib\lua\path\syscall\fs.lua]],
+[[lib\lua\path\lfs\impl\fs.lua]],
+[[lib\lua\path\module.lua]],
+[[lib\lua\path\win32\alien\fs.lua]],
+[[lib\lua\path\win32\alien\types.lua]],
+[[lib\lua\path\win32\alien\utils.lua]],
+[[lib\lua\path\win32\alien\wcs.lua]],
+[[lib\lua\path\win32\ffi\fs.lua]],
+[[lib\lua\path\win32\ffi\types.lua]],
+[[lib\lua\path\win32\ffi\wcs.lua]],
+[[lib\lua\path\win32\fs.lua]],
+[[lib\lua\path\win32\wcs.lua]],
+}
+,
+Data = {
+[[share\lua-path\README.md]],
+[[share\lua-path\LICENCE.txt]],
+}
+,
+Test = {
+[[share\lua-path\test\\.luacov]],
+[[share\lua-path\test\\each_perf.lua]],
+[[share\lua-path\test\\run.lua]],
+[[share\lua-path\test\\test.lua]],
+[[share\lua-path\test\\test_each.lua]],
+[[share\lua-path\test\\test_fs.lua]],
+[[share\lua-path\test\\test_lfs.lua]],
+[[share\lua-path\test\\test_wcs.lua]],
+[[share\lua-path\test\\utils.lua]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "lua-path"
+url = "https://github.com/moteus/lua-path"
